@@ -21,6 +21,25 @@
       <p>Embed of Wikipedia page for "Bird of prey" should be below.</p>
    <div class="embed-site">
   <p>
+    <script>
+    var tour = new Tour({
+  steps: [
+  {
+    element: "#wikipedia1",
+    title: "This is a predatory bird",
+    content: "This right here is the page with predatory birds in it."
+  },
+  {
+    element: "#wikipedia2",
+    title: "Another predatory bird",
+    content: "There's only one page here."
+  }
+]});
+
+tour.init();
+
+tour.start();
+    </script>
     <iframe src="https://en.wikipedia.org/wiki/Bird_of_prey" width="100%" height="800">
    <p>Your browser does not support iframes.</p>
 </iframe> 
